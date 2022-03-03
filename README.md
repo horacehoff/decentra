@@ -41,4 +41,4 @@ Copyright © 2022 [Just_a_mango](https://github.com/just-a-mango).<br />
 This project is [MIT](https://github.com/just-a-mango/decentra/blob/main/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_Thanks to [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_ for generating this README with 💖
