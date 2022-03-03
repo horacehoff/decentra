@@ -39,10 +39,10 @@ def parse_db(data):
 
 
 def decrypt_data(data):
-    return decrypt(decrypt(data.decode('utf-8'), "get fucked"), ENC_KEY)
+    return decrypt(decrypt(data.decode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY)
 
 def encrypt_data(data):
-    return bytes(encrypt(encrypt(data.encode('utf-8'), "get fucked"), ENC_KEY))
+    return bytes(encrypt(encrypt(data.encode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY))
 
 HOST = '127.0.0.1'  # The server's hostname or IP address
 PORT = 10969        # The port used by the server

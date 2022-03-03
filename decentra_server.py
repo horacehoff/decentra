@@ -61,14 +61,14 @@ articles_titles = ["noice"]
 def send_db():
     all_articles = str(articles)+"!"+str(articles_descriptions)+"!"+str(articles_titles)
     all_articles = encrypt(all_articles, ENC_KEY)
-    all_articles = encrypt(all_articles, "get fucked")
+    all_articles = encrypt(all_articles, "That's one small step for man, one giant leap for mankind")
     return bytes(all_articles, 'utf-8')
 
 def decrypt_data(data):
-    return decrypt(decrypt(data.decode('utf-8'), "get fucked"), ENC_KEY)
+    return decrypt(decrypt(data.decode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY)
 
 def encrypt_data(data):
-    return bytes(encrypt(encrypt(data.encode('utf-8'), "get fucked"), ENC_KEY))
+    return bytes(encrypt(encrypt(data.encode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY))
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
@@ -76,7 +76,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.listen()
         conn, addr = s.accept()
         with conn:
-            if "request_db" in decrypt(decrypt(s.recv(4096).decode('utf-8'), "get fucked"), ENC_KEY):
+            if "request_db" in decrypt(decrypt(s.recv(4096).decode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY):
                     import random
                     try:
                         selected_node = random.choice(nodes)
