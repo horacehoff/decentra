@@ -1,7 +1,7 @@
 import socket
 from datetime import datetime
 
-ENC_KEY = "--__o__xxxxxx1969xo_uhfthfs8ef4s68ef680xxxxx--"
+ENC_KEY = "94606366EF55EDEDB66E431153BD2E48BB5015A7F15371B2DF78D37C32B5E2886D4292F1D825BE32011BF7AA62FC2A2ACB8B765ABF6AB26099BAAF12943279FD"
 nodes = []
 
 with open("decentra_server.log","w+") as f:
