@@ -1,5 +1,14 @@
 import socket, os
 ENC_KEY = "94606366EF55EDEDB66E431153BD2E48BB5015A7F15371B2DF78D37C32B5E2886D4292F1D825BE32011BF7AA62FC2A2ACB8B765ABF6AB26099BAAF12943279FD"
+
+class log():
+    def info(data):
+        print("INFO: "+data)
+    def warning(data):
+        print("WARNING: "+data)
+    def critical(data):
+        print("CRITICAL: "+data)
+        
 def encrypt(data, key): # encrypt(no explanation either)
     import random
     result = ''
@@ -30,12 +39,14 @@ def decrypt(data, key): #decrypt(no explanation)
 
 def parse_db(data):
     all_lists = data.replace("'","").split("!")
-    articles = all_lists[0].strip('][').split(', ')
-    articles_descriptions = all_lists[1].strip('][').split(', ')
-    articles_titles = all_lists[2].strip('][').split(', ')
-    print(articles, articles_descriptions, articles_titles)
+    data = ""
+    for list in all_lists:
+        if not data == all_lists[0]:
+            data = data+"\n"+str(list.strip('][').split(', '))
+        else:
+            data = str(list.strip('][').split(', '))
     with open("db_decentra.txt","w+") as f:
-        f.write(str(articles)+"\n"+str(articles_descriptions)+"\n"+str(articles_titles)+"\n")
+        f.write(data.removeprefix("\n"))
 
 
 def decrypt_data(data):
@@ -45,16 +56,12 @@ def encrypt_data(data):
     return bytes(encrypt(encrypt(data.encode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY))
 
 HOST = '127.0.0.1'  # The server's hostname or IP address
-PORT = 10969        # The port used by the server
+PORT = 1969        # The port used by the server
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     while True:
-        if os.path.isfile("./db_decentra.txt"):
-            s.connect((HOST, PORT))
-            data = s.recv(4096)
-            data = decrypt_data(data)
-            print('Received', data)
-            parse_db(data)
-        else:
-            s.connect((HOST, PORT))
-            s.sendall(encrypt_data("request_db"))
+        s.connect((HOST, PORT))
+        data = s.recv(4096)
+        data = decrypt_data(data)
+        log.info('Received database from '+HOST+"(PORT "+str(PORT)+") -> "+data.replace("!","[STRING TABLE SEPARATOR]"))
+        parse_db(data)

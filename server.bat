@@ -1,0 +1,1 @@
+python decentra_server.py

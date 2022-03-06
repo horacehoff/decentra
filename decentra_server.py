@@ -1,11 +1,13 @@
 import socket
 from datetime import datetime
+import os
 
 ENC_KEY = "94606366EF55EDEDB66E431153BD2E48BB5015A7F15371B2DF78D37C32B5E2886D4292F1D825BE32011BF7AA62FC2A2ACB8B765ABF6AB26099BAAF12943279FD"
 nodes = []
 
+os.remove("decentra_server.log")
 with open("decentra_server.log","w+") as f:
-    f.write("Decentra Server Log")
+    f.write("|-------------------|\n|Decentra Server Log|\n|-------------------|\n")
 
 def encrypt(data, key): # encrypt(no explanation either)
     import random
@@ -36,11 +38,11 @@ def decrypt(data, key): #decrypt(no explanation)
     return result
 
 def add_to_log(data):
-    with open("decentra_server.log","a") as f:
+    with open("./decentra_server.log","a") as f:
         now = datetime.now()
         current_time = now.strftime("%Y/%m/%d/%H:%M:%S")
         f.write("\n("+current_time+")  -  "+data)
-        print("\n("+current_time+")  -  "+data)
+        print("("+current_time+")  -  "+data)
 
 class log():
     def info(data):
@@ -52,11 +54,11 @@ class log():
         
 
 
-HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
-PORT = 10969        # Port to listen on (non-privileged ports are > 1023)
-articles = ["heyya","ayo"]
-articles_descriptions = ["ayo bitch"]
-articles_titles = ["noice"]
+HOST = '127.0.0.1'
+PORT = 1969
+articles = ["article1","article22"]
+articles_descriptions = ["first description","second description"]
+articles_titles = ["first title","second title"]
 
 def send_db():
     all_articles = str(articles)+"!"+str(articles_descriptions)+"!"+str(articles_titles)
@@ -76,23 +78,17 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.listen()
         conn, addr = s.accept()
         with conn:
-            if "request_db" in decrypt(decrypt(s.recv(4096).decode('utf-8'), "That's one small step for man, one giant leap for mankind"), ENC_KEY):
-                    import random
-                    try:
-                        selected_node = random.choice(nodes)
-                        conn.sendall(encrypt(selected_node, ENC_KEY))
-                        log.info("Sent node adress("+selected_node+") to requesting node -> "+str(addr))
-                    except:
-                        log.warning("Failed to send node adress("+selected_node+") to requesting node -> "+str(addr))
-            else:
+            if not any(str(addr[0]) in node for node in nodes):
                 log.info("New node -> "+str(addr))
                 nodes.append(addr)
-                print(nodes)
-                try:
-                    conn.sendall(send_db())
-                    log.info("Sent database to node -> "+str(addr))
-                    conn.close()
-                except Exception as e:
-                    print(e)
-                    log.warning("Failed to send database to node -> "+str(addr))
-                    pass
+            else:
+                log.info("Known node with different port -> "+str(addr))
+            log.info("Reminder of all existing nodes -> "+str(nodes))
+            try:
+                conn.sendall(send_db())
+                log.info("Sent database to node -> "+str(addr))
+                conn.close()
+            except Exception as e:
+                print(e)
+                log.warning("Failed to send database to node -> "+str(addr))
+                pass
