@@ -56,7 +56,7 @@ class log():
 
 HOST = '127.0.0.1'
 PORT = 1969
-articles = ["article1","article22"]
+articles = ["article1","article2"]
 articles_descriptions = ["first description","second description"]
 articles_titles = ["first title","second title"]
 

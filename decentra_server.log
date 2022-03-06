@@ -2,27 +2,18 @@
 |Decentra Server Log|
 |-------------------|
 
-(2022/03/06/14:42:53)  -  INFO: New node -> ('127.0.0.1', 58655)
-(2022/03/06/14:42:53)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:42:53)  -  INFO: Sent database to node -> ('127.0.0.1', 58655)
-(2022/03/06/14:42:54)  -  INFO: Known node with different port -> ('127.0.0.1', 58657)
-(2022/03/06/14:42:54)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:42:54)  -  INFO: Sent database to node -> ('127.0.0.1', 58657)
-(2022/03/06/14:42:56)  -  INFO: Known node with different port -> ('127.0.0.1', 58661)
-(2022/03/06/14:42:56)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:42:56)  -  INFO: Sent database to node -> ('127.0.0.1', 58661)
-(2022/03/06/14:43:24)  -  INFO: Known node with different port -> ('127.0.0.1', 58683)
-(2022/03/06/14:43:24)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:43:24)  -  INFO: Sent database to node -> ('127.0.0.1', 58683)
-(2022/03/06/14:43:25)  -  INFO: Known node with different port -> ('127.0.0.1', 58687)
-(2022/03/06/14:43:25)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:43:25)  -  INFO: Sent database to node -> ('127.0.0.1', 58687)
-(2022/03/06/14:43:53)  -  INFO: Known node with different port -> ('127.0.0.1', 58713)
-(2022/03/06/14:43:53)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:43:53)  -  INFO: Sent database to node -> ('127.0.0.1', 58713)
-(2022/03/06/14:43:54)  -  INFO: Known node with different port -> ('127.0.0.1', 58714)
-(2022/03/06/14:43:54)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:43:54)  -  INFO: Sent database to node -> ('127.0.0.1', 58714)
-(2022/03/06/14:44:07)  -  INFO: Known node with different port -> ('127.0.0.1', 58724)
-(2022/03/06/14:44:07)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 58655)]
-(2022/03/06/14:44:07)  -  INFO: Sent database to node -> ('127.0.0.1', 58724)
+(2022/03/06/14:49:30)  -  INFO: New node -> ('127.0.0.1', 61439)
+(2022/03/06/14:49:30)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
+(2022/03/06/14:49:30)  -  INFO: Sent database to node -> ('127.0.0.1', 61439)
+(2022/03/06/14:49:33)  -  INFO: Known node with different port -> ('127.0.0.1', 61443)
+(2022/03/06/14:49:33)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
+(2022/03/06/14:49:33)  -  INFO: Sent database to node -> ('127.0.0.1', 61443)
+(2022/03/06/14:49:33)  -  INFO: Known node with different port -> ('127.0.0.1', 61444)
+(2022/03/06/14:49:33)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
+(2022/03/06/14:49:33)  -  INFO: Sent database to node -> ('127.0.0.1', 61444)
+(2022/03/06/14:49:37)  -  INFO: Known node with different port -> ('127.0.0.1', 61448)
+(2022/03/06/14:49:37)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
+(2022/03/06/14:49:37)  -  INFO: Sent database to node -> ('127.0.0.1', 61448)
+(2022/03/06/14:49:49)  -  INFO: Known node with different port -> ('127.0.0.1', 61458)
+(2022/03/06/14:49:49)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
+(2022/03/06/14:49:49)  -  INFO: Sent database to node -> ('127.0.0.1', 61458)
