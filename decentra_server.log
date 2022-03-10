@@ -2,18 +2,12 @@
 |Decentra Server Log|
 |-------------------|
 
-(2022/03/06/14:49:30)  -  INFO: New node -> ('127.0.0.1', 61439)
-(2022/03/06/14:49:30)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
-(2022/03/06/14:49:30)  -  INFO: Sent database to node -> ('127.0.0.1', 61439)
-(2022/03/06/14:49:33)  -  INFO: Known node with different port -> ('127.0.0.1', 61443)
-(2022/03/06/14:49:33)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
-(2022/03/06/14:49:33)  -  INFO: Sent database to node -> ('127.0.0.1', 61443)
-(2022/03/06/14:49:33)  -  INFO: Known node with different port -> ('127.0.0.1', 61444)
-(2022/03/06/14:49:33)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
-(2022/03/06/14:49:33)  -  INFO: Sent database to node -> ('127.0.0.1', 61444)
-(2022/03/06/14:49:37)  -  INFO: Known node with different port -> ('127.0.0.1', 61448)
-(2022/03/06/14:49:37)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
-(2022/03/06/14:49:37)  -  INFO: Sent database to node -> ('127.0.0.1', 61448)
-(2022/03/06/14:49:49)  -  INFO: Known node with different port -> ('127.0.0.1', 61458)
-(2022/03/06/14:49:49)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 61439)]
-(2022/03/06/14:49:49)  -  INFO: Sent database to node -> ('127.0.0.1', 61458)
+(2022/03/10/20:05:25)  -  INFO: New node -> ('127.0.0.1', 54503)
+(2022/03/10/20:05:25)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 54503)]
+(2022/03/10/20:05:25)  -  INFO: Sent database to node -> ('127.0.0.1', 54503)
+(2022/03/10/20:05:28)  -  INFO: Known node with different port -> ('127.0.0.1', 54506)
+(2022/03/10/20:05:28)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 54503)]
+(2022/03/10/20:05:28)  -  INFO: Sent database to node -> ('127.0.0.1', 54506)
+(2022/03/10/20:05:52)  -  INFO: Known node with different port -> ('127.0.0.1', 54517)
+(2022/03/10/20:05:52)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 54503)]
+(2022/03/10/20:05:52)  -  INFO: Sent database to node -> ('127.0.0.1', 54517)

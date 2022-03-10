@@ -4,12 +4,9 @@
   <a href="https://github.com/just-a-mango/decentra/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://twitter.com/pokoracio" target="_blank">
-    <img alt="Twitter: pokoracio" src="https://img.shields.io/twitter/follow/pokoracio.svg?style=social" />
-  </a>
 </p>
 
-> A decentralized network system
+> ***A decentralized network system***
 
 ### 🏠 [Homepage](https://github.com/just-a-mango/decentra)
 
