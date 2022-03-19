@@ -1,2 +1,2 @@
-cd c:\Users\horac\Documents\Programming\decentra\
+@echo off
 python decentra_server.py

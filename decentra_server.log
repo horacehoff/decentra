@@ -1,13 +1,3 @@
-|-------------------|
++-------------------+
 |Decentra Server Log|
-|-------------------|
-
-(2022/03/10/20:05:25)  -  INFO: New node -> ('127.0.0.1', 54503)
-(2022/03/10/20:05:25)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 54503)]
-(2022/03/10/20:05:25)  -  INFO: Sent database to node -> ('127.0.0.1', 54503)
-(2022/03/10/20:05:28)  -  INFO: Known node with different port -> ('127.0.0.1', 54506)
-(2022/03/10/20:05:28)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 54503)]
-(2022/03/10/20:05:28)  -  INFO: Sent database to node -> ('127.0.0.1', 54506)
-(2022/03/10/20:05:52)  -  INFO: Known node with different port -> ('127.0.0.1', 54517)
-(2022/03/10/20:05:52)  -  INFO: Reminder of all existing nodes -> [('127.0.0.1', 54503)]
-(2022/03/10/20:05:52)  -  INFO: Sent database to node -> ('127.0.0.1', 54517)
++-------------------+
