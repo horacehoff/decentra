@@ -5,6 +5,7 @@ import os
 ENC_KEY = "$52A5E5ABC427Fp9430BC5D435F9om0CE3BEC257C2E9DF122DD9178D29E7DAC8EB6E3E5ABC4907F9430BC5D435F2E9DF12FB1DZeN_RCE3BEC257C2@2&8zk$NkqKzh-Vr2$AGTJf!L&p3=Zx?vmg45272C0F58BB404766A81F1__Z$sKfj6vT-Fs49RAxU6%5NxkPB=rT%QK%d&+*UkPjp&=7ebZptW$xYp*Mg-GLVe$-JsBJ*f5A5rvKJvtEx*T@hTer^tWd4GAcxP!NLNhBTx-?NvqS4@tt_uMa!=?Uxz7hSAZ&7RZ4CUEHt3k4Qggt9M!9Fn#CU6AVNZ+rv93VunG4!E7hHtQ=*DMDmLSD9D3C32C003C342F0DD401FF926508605DB68B9D975A49EB4A8FB92ED0F0CC4Bf8pr@NZe$59jE6735686C6A05C7F83556114355912ECB1D033843DD50FB15D2F788E93EFEBC593A0A37C84803C5C04A7070097DE8AEACAE213DBF223B52B772690ED1ADBE9F6GQw6PdjYxH%FvLWKLa$n&zVJ5_AFhMxtWL7sD+Dx4W7qa7Hk47Q&B975956D9199B98CD48D4CD37293C64A7617E8738064DFFFA402762C36D0569DA032F833D4EB399C55671940D49AB94BDED593C5BD585"
 nodes = []
 
+# Deleting the log file and creating a new one.
 os.remove("decentra_server.log")
 with open("decentra_server.log","w+") as f:
     f.write("+-------------------+\n|Decentra Server Log|\n+-------------------+\n")
@@ -73,6 +74,33 @@ def add_to_log(data):
 
 class log():
     def info(data):
+        """
+        # Python
+        def info(data):
+                add_to_log("INFO: "+data)
+            def warning(data):
+                add_to_log("WARNING: "+data)
+            def critical(data):
+                add_to_log("CRITICAL: "+data)
+        
+        # Python
+        def info(data):
+                add_to_log("INFO: "+data)
+            def warning(data):
+                add_to_log("WARNING: "+data)
+            def critical(data):
+                add_to_log("CRITICAL: "+data)
+        
+        # Python
+        def info(data):
+                add_to_log("INFO: "+data)
+            def warning(data):
+                add_to_log("WARNING: "+data)
+            def critical(data):
+                add_
+        
+        :param data: The data to be logged
+        """
         add_to_log("INFO: "+data)
     def warning(data):
         add_to_log("WARNING: "+data)
