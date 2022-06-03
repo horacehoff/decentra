@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> ***A decentralized network system***
+***[WIP] A decentralized network system***
 
 ### 🏠 [Homepage](https://github.com/just-a-mango/decentra)
 
