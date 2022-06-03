@@ -11,11 +11,18 @@
 ### 🏠 [Homepage](https://github.com/just-a-mango/decentra)
 
 ## Usage
-
+Launch the server:
 ```sh
 python decentra_server.py
 ```
-
+Launch the client:
+```sh
+python decentra_client.py
+```
+Do a stress-test on the server:
+```sh
+python stress_test.py
+```
 ## Author
 
 👤 **Just_a_mango**
