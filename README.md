@@ -27,9 +27,8 @@ python stress_test.py
 
 👤 **Just_a_mango**
 
-* Website: https://just-a-mango.github.io/
-* Twitter: [@pokoracio](https://twitter.com/pokoracio)
-* Github: [@just-a-mango](https://github.com/just-a-mango)
+* Website: https://horacehoff.github.io/
+* Github: [@just-a-mango](https://github.com/horacehoff)
 
 ## 🤝 Contributing
 
